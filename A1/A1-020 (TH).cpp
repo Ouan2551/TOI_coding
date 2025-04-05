@@ -7,23 +7,28 @@ int main()
     {
         cin >> nums[i];
     }
-    int num = nums[0];
-    for (int j = 1; j < 3; j++)
+    for (int i = 0; i < 2; i++)
     {
-        if (num - nums[j] <= -1)
+        int num = nums[i];
+        for (int j = 1; j < 3; j++)
         {
-            increase++;
-        }
-        else if (num - nums[j] >= 1)
-        {
-            decrease++;
+            if (num - nums[j] <= -1)
+            {
+                increase++;
+            }
+            else if (num - nums[j] >= 1)
+            {
+                decrease++;
+            }
         }
     }
-    if (increase == 2)
+    
+    
+    if (increase == 4)
     {
         cout << "increasing";
     }
-    else if (decrease == 2)
+    else if (decrease == 4)
     {
         cout << "decreasing";
     }
