@@ -10,25 +10,20 @@ int main()
     for (int i = 0; i < 2; i++)
     {
         int num = nums[i];
-        for (int j = 1; j < 3; j++)
-        {
-            if (num - nums[j] <= -1)
+            if (num - nums[2] <= -1)
             {
                 increase++;
             }
-            else if (num - nums[j] >= 1)
+            else if (num - nums[2] >= 1)
             {
                 decrease++;
             }
-        }
     }
-    
-    
-    if (increase == 4)
+    if (increase == 2)
     {
         cout << "increasing";
     }
-    else if (decrease == 4)
+    else if (decrease == 2)
     {
         cout << "decreasing";
     }
