@@ -4,53 +4,53 @@ int main()
 {
     ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
     int day, month; cin >> day >> month;
-    if ((day >= 19 && day <= 22) && (month == 12 || month == 1))
+    if ((day >= 22 && month == 12) || (day <= 19 && month == 1))
     {
         cout << "capricorn";
     }
-    else if ((day >= 18 && day <= 20) && (month == 1 || month == 2))
+    else if ((day >= 20 && month == 1) || (day <= 18 && month == 2))
     {
         cout << "aquarius";
     }
-    else if ((day >= 19 && day <= 20) && (month == 2 || month == 3))
+    else if ((day >= 19 && month == 2) || (day <= 20 && month == 3))
     {
         cout << "pisces";
     }
-    else if ((day >= 19 && day <= 21) && (month == 3 || month == 4))
+    else if ((day >= 21 && month == 3) || (day <= 19 && month == 4))
     {
         cout << "aries";
     }
-    else if (day >= 20 && (month == 4 || month == 5))
+    else if ((day >= 20 && month == 4) || (day <= 20 && month == 5))
     {
         cout << "taurus";
     }
-    else if (day >= 21 && (month == 5 || month == 6))
+    else if ((day >= 21 && month == 5) || (day <= 21 && month == 6))
     {
         cout << "gemini";
     }
-    else if (day >= 22 && (month == 7 || month == 8))
+    else if ((day >= 22 && month == 6) || (day <= 22 && month == 7))
     {
         cout << "cancer";
     }
-    else if (day >= 22 && (month == 7 || month == 8))
+    else if ((day >= 23 && month == 7) || (day <= 22 && month == 8))
     {
         cout << "leo";
     }
-    else if (day >= 22 && (month == 7 || month == 8))
+    else if ((day >= 23 && month == 8) || (day <= 22 && month == 9))
     {
-        cout << "cancer";
+        cout << "virgo";
     }
-    else if (day >= 22 && (month == 7 || month == 8))
+    else if ((day >= 23 && month == 9) || (day <= 23 && month == 10))
     {
-        cout << "cancer";
+        cout << "libra";
     }
-    else if (day >= 22 && (month == 7 || month == 8))
+    else if ((day >= 24 && month == 10) || (day <= 21 && month == 11))
     {
-        cout << "cancer";
+        cout << "scorpio";
     }
-    else if (day >= 22 && (month == 7 || month == 8))
+    else if ((day >= 22 && month == 11) || (day <= 21 && month == 12))
     {
-        cout << "cancer";
+        cout << "sagittarius";
     }
     return 0;
 }
