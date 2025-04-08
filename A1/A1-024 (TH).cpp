@@ -4,50 +4,9 @@ int main()
 {
     ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
     int year, size_cc; cin >> year >> size_cc;
-    if (year <= 1990)
-    {
-        if (size_cc <= 1500)
-        {
-            cout << 1250;
-        }
-        else if (size_cc <= 2000)
-        {
-            cout << 1400;
-        }
-        else
-        {
-            cout << 2000;
-        }
-    }
-    else if (year <= 1999)
-    {
-        if (size_cc <= 1500)
-        {
-            cout << 1100;
-        }
-        else if (size_cc <= 2000)
-        {
-            cout << 1300;
-        }
-        else
-        {
-            cout << 1700;
-        }
-    }
-    else
-    {
-        if (size_cc <= 1500)
-        {
-            cout << 1000;
-        }
-        else if (size_cc <= 2000)
-        {
-            cout << 1200;
-        }
-        else
-        {
-            cout << 1500;
-        }
-    }
+    int tax[3][3] = {{1250, 1400, 2000}, {1100, 1300, 1700}, {1000, 1200, 1500}};
+    int i = (year <= 1990) ? 0 : (year <= 1999) ? 1 : 2;
+    int j = (size_cc <= 1500) ? 0 : (size_cc <= 2000) ? 1 : 2;
+    cout << tax[i][j];
     return 0;
 }
