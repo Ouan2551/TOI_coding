@@ -5,9 +5,13 @@ int main()
     // https://www.rapidtables.com/math/symbols/roman_numerals.html
     ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
     int num; cin >> num;
-    if (num < 1 || num > 9)
+    if (num == 0 || num > 9)
     {
         cout << "Error : Out of range";
+    }
+    else if (num < 0)
+    {
+        cout << "Error : Please input positive number";
     }
     else
     {
