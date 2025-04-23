@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <unordered_map>
 int main()
 {
     std::ios::sync_with_stdio(0);std::cin.tie(0);std::cout.tie(0);
@@ -16,6 +17,7 @@ int main()
     {
         std::cin >> num; bucket_select.push_back(num);
     }
-    
+    // solution
+    std::unordered_map(int,int) checking;
     return 0;
 }
